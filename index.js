@@ -38,3 +38,38 @@ deleteChild.addEventListener('click', function(){
 
 });
 
+
+// Object notation in js//
+
+// var arr = ["a", "b", 2, true]
+// console.log(arr);
+// var studentData = [10,20,"male", "ali"];
+// console.log(studentData);
+
+// var studentData = {
+//     roll:10,
+//     age:20,
+//     gender:"male",
+//     name:"ali",
+// };
+
+// frontendData= JSON.parse(studentData);
+// console.log(frontendData);
+
+// // console.log(studentData["name"]);
+// // console.log(studentData["age"]);
+
+var student = {
+    "name":"Ali",
+    "age":"WMA 10",
+   "subjects": [ "Math", "English", "Science" ],
+   "bio":function(){
+    console.log("Hi i am inside object");
+   },   
+
+};
+console.log(student);
+console.log(student.name);
+console.log(student.subjects);
+console.log(student.bio());
+
