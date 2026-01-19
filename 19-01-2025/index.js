@@ -54,3 +54,17 @@ obj6.funct = function(){
     return this.name + " " + this.age + " " + this.rollNo;
 }
 console.log(obj6.funct());
+
+// Create an Object
+const person = {
+  fname: "John",
+  ageNew: 30,
+  city: "New York"
+};
+
+// Create an Array
+const myArray = Object.values(person);
+// Stringify the Array
+  console.log(myArray);
+let text = JSON.stringify(myArray);
+console.log(text);
