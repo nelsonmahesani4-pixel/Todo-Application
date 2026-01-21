@@ -68,3 +68,4 @@ const myArray = Object.values(person);
   console.log(myArray);
 let text = JSON.stringify(myArray);
 console.log(text);
+
