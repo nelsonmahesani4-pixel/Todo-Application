@@ -31,3 +31,9 @@ switch (gender) {
 const Gender = "male" ? "male" : "female";
 console.log(Gender);
 
+// function StudentData(sname, sroll) {
+
+// }
+
+
+
