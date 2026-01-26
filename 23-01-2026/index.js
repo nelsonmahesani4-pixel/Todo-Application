@@ -1,4 +1,4 @@
-var openPage = window.open();
+// var openPage = window.open();
 
 var content= "<h1>Capuchin monkey</h1><img src= 'monkey.jpg'><p>The word capuchin derives from agroup of friars<br>named the Order of Friars Minor Capuchin who wear<br>brownrobes with large hoods covering their heads.</p>";
 
@@ -35,19 +35,19 @@ var content= "<h1>Capuchin monkey</h1><img src= 'monkey.jpg'><p>The word capuchi
 //  }
 //  }
 
-document.getElementById('showToastButton').addEventListener('click', function() {
-    Toastify({
-        text: "Toastify in js is working perfectly!",
-        duration: 3000, // Duration in milliseconds, -1 for permanent
-        gravity: "top", // Position: `top` or `bottom`
-        position: "right", // Position: `left`, `center` or `right`
-        backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)", // Custom background color
-        stopOnFocus: true, // Prevents dismiss on hover
-        onClick: function(){
-            // Callback after click
-        }
-    }).showToast(); // Invokes the toast
-});
+// document.getElementById('showToastButton').addEventListener('click', function() {
+//     Toastify({
+//         text: "Toastify in js is working perfectly!",
+//         duration: 3000, // Duration in milliseconds, -1 for permanent
+//         gravity: "top", // Position: `top` or `bottom`
+//         position: "right", // Position: `left`, `center` or `right`
+//         backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)", // Custom background color
+//         stopOnFocus: true, // Prevents dismiss on hover
+//         onClick: function(){
+//             // Callback after click
+//         }
+//     }).showToast(); // Invokes the toast
+// });
 
 function main(name,Callback){
     console.log(`Hello ${name}`);
@@ -63,5 +63,6 @@ console.log(main,highOFunction);
 var arr = [1,2,3,4,5];
 var mapFunct = arr.map((num=> num * 2));
 console.log(mapFunct);
+
 
 
