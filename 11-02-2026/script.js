@@ -57,3 +57,6 @@ function handleData(data){
     console.log("Fetched data:", data);
 }
 fetchData(handleData);
+
+ 
+
