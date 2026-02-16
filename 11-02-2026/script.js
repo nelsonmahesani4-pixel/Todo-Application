@@ -47,16 +47,69 @@ function callbackFunction(){
     console.log("This is a callback function.");
 }
 test(callbackFunction);
+// function fetchData(handleData){
+//     fetch('https://dummyjson.com/products')
+//     .then(res => res.json()
+//     .then(data => handleData(data))
+// )
+// }
+// function handleData(data){
+//     console.log("Fetched data:", data);
+// }
+// fetchData(handleData);
+
+var arr =[1,2,3,4,5,6,7];       
+arr.forEach(callback)
+function callback(value){
+    console.log(value + 2)
+}
+
+
+// call hell---nested
+function funct1(callback){
+    callback(funct1)
+    console.log("This is function 1");
+}
+function funct2(callback){
+    callback(funct1)
+    console.log("This is function 2");
+}
+function funct3(callback){
+    callback(funct1)
+    console.log("This is function 3");
+}
+
+funct1(()=>{
+    funct2(()=>{
+        funct3(()=>{
+            console.log("All functions executed");
+        })  
+    })
+})
+
+// when we use callback function--> simple API fetch 
+// when we use promises function--> when code is nested and compex
+
+
+// synchronous and asynchronous
+console.log("This is synchronous code.");
+setTimeout(()=>{
+    console.log("This is asynchronous code.2"); 
+}, 2000);
+// asynchronous --> don't stop any  other functions it render all function then itself
+// synchronous --> stop other functions until it is executed
+
+ 
+console.log("This is synchronous code.");
+console.log("This is synchronous code.");
+
 function fetchData(handleData){
     fetch('https://dummyjson.com/products')
     .then(res => res.json()
-    .then(data => handleData(data))
+    .then(data => handleData(data.products))    
 )
 }
 function handleData(data){
     console.log("Fetched data:", data);
 }
 fetchData(handleData);
-
- 
-
